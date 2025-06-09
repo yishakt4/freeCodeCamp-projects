@@ -1,19 +1,23 @@
 function isPalindrome(str) {
     // Remove non-alphanumeric characters and convert to lowercase
     let cleaned = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
-    
-    // Reverse the cleaned string
     let reversed = cleaned.split('').reverse().join('');
-  
+
     // Compare and return result
     if (cleaned === reversed) {
-      console.log("It's a palindrome!");
+      return "It's a palindrome!";
     } else {
-      console.log("It's not a palindrome.");
+      return "It's not a palindrome.";
     }
   }
-  
-  // Example usage
-  isPalindrome("Racecar");       // It's a palindrome!
-  isPalindrome("Hello, world");  // It's not a palindrome.
+
+  // Handle form submission
+  document.getElementById('palindrome-form').addEventListener('submit', function(e) {
+    e.preventDefault(); // prevent the page from reloading
+
+    const inputText = document.getElementById('input-text').value;
+    const result = isPalindrome(inputText);
+
+    document.getElementById('result').textContent = result;
+  });
   
