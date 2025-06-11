@@ -19,5 +19,5 @@ function isPalindrome(str) {
     const result = isPalindrome(inputText);
 
     document.getElementById('result').textContent = result;
-  })
+  });
   
