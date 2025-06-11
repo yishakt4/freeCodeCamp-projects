@@ -33,4 +33,4 @@ function intToRoman(num) {
     const input = document.getElementById("numberInput").value;
     const result = intToRoman(parseInt(input));
     document.getElementById("result").innerText = result;
-  
+  }
