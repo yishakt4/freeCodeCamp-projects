@@ -13,3 +13,4 @@ function intToRoman(num) {
       { value: 0.05, symbol: "Nickel" },
       { value: 0.01, symbol: "Penny" }
     ];
+}
