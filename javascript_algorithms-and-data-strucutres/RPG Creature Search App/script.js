@@ -74,3 +74,4 @@ form.addEventListener('submit', async (e) => {
   } catch {
     alert('Creature not found');
   }
+}); 
