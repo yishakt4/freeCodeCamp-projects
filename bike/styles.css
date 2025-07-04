@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to top, #9fd3c7, #fff);
+  }
+  
+  canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+  }
+  
