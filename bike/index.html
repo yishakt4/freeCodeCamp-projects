@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Man Riding a Bike</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <canvas id="three-canvas"></canvas>
-    <script type="module" src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Waving Hand SVG</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f0f0;
+    }
+
+    .hand {
+      width: 120px;
+      transform-origin: bottom center;
+      animation: wave 2s infinite;
+    }
+
+    @keyframes wave {
+      0%   { transform: rotate(0deg); }
+      20%  { transform: rotate(10deg); }
+      40%  { transform: rotate(-8deg); }
+      60%  { transform: rotate(10deg); }
+      80%  { transform: rotate(-4deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</head>
+<body>
+  <svg class="hand" viewBox="0 0 100 100" fill="#ffcc80" xmlns="http://www.w3.org/2000/svg">
+    <path d="M50,10 a10,10 0 0 1 10,10 v20 h10 a5,5 0 0 1 5,5 v10 a5,5 0 0 1 -5,5 h-10 v10 a10,10 0 0 1 -20,0 v-10 h-10 a5,5 0 0 1 -5,-5 v-10 a5,5 0 0 1 5,-5 h10 v-20 a10,10 0 0 1 10,-10z"/>
+  </svg>
+</body>
 </html>
