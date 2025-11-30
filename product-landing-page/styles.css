@@ -1,0 +1,100 @@
+/* Flexbox for navbar */
+#nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Space below fixed navbar */
+  body {
+    margin-top: 120px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Header styling */
+  header h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #header-img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Form styling */
+  #form {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  #form input[type="email"] {
+    padding: 8px;
+    width: 250px;
+    max-width: 80%;
+  }
+  
+  #form input[type="submit"] {
+    padding: 8px 16px;
+    margin-left: 10px;
+    background-color: #f1c40f;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Section styling */
+  section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  /* Pricing section */
+  #pricing div {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px 0;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  footer h3 {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  /* Media Query for responsiveness */
+  @media (max-width: 600px) {
+    #nav-bar {
+      flex-direction: column;
+      padding: 10px 0;
+    }
+  
+    #form input[type="email"] {
+      width: 80%;
+      margin-bottom: 10px;
+    }
+  
+    #form input[type="submit"] {
+      display: block;
+      margin: auto;
+    }
+  
+    header h1 {
+      font-size: 1.4rem;
+    }
+  }
+  

@@ -1,0 +1,20 @@
+body {
+    background-color: rgba(12, 111, 224, 0.507);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+p {
+    text-align: center;
+    color: white;
+}
+
+#palindrome-form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
